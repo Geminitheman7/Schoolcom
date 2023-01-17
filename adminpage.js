@@ -3,8 +3,10 @@ function login() {
   var password = document.getElementById("password").value;
   
   if (username === "eagleadmin" && password === "adminsm417") {
-    window.location.href = "success.html";
+    var error = document.getElementById("error");
+    error.innerHTML = "Successful Login";
   } else {
-    window.location.href = "fail.html";
+    var error = document.getElementById("error");
+    error.innerHTML = "Invalid username or password. Please try again.";
   }
 }
