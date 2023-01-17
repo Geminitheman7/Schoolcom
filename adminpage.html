@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="adminpage.css" rel="stylesheet" type="text/css" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" type="text/css" href="adminpage.css">
 </head>
 <body>
-<form>
-  <label>Username:</label>
-  <input type="text" id="username" placeholder="Enter username">
-  <br>
-  <label>Password:</label>
-  <input type="password" id="password" placeholder="Enter password">
-  <br>
-  <input type="button" value="Login" onclick="login()">
-</form>
+  <form>
+    <label>Username:</label>
+    <input type="text" id="username" placeholder="Enter username">
+    <br>
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter password">
+    <br>
+    <input type="button" value="Login" onclick="login()">
+  </form>
+  <div id="error"></div>
+  <script src="adminpage.js"></script>
 </body>
 </html>
